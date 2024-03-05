@@ -32,13 +32,13 @@ function App() {
 
 
 
-      {playerAmount === 2 ? <div>  <Counter /><Counter /></div> : null}
-      {playerAmount === 3 ? <div>  <Counter /><Counter /><Counter /></div> : null}
-      {playerAmount === 4 ? <div>  <Counter /><Counter /><Counter /><Counter /></div> : null}
-      {playerAmount === 5 ? <div>  <Counter /><Counter /><Counter /><Counter /><Counter /></div> : null}
-      {playerAmount === 6 ? <div>  <Counter /><Counter /><Counter /><Counter /><Counter /><Counter /></div> : null}
-      {playerAmount === 7 ? <div>  <Counter /><Counter /><Counter /><Counter /><Counter /><Counter /><Counter /></div> : null}
-      {playerAmount === 8 ? <div>  <Counter /><Counter /><Counter /><Counter /><Counter /><Counter /><Counter /><Counter /></div> : null}
+      {playerAmount === 2 ? <div>  <Counter /><br></br><Counter /></div> : null}
+      {playerAmount === 3 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+      {playerAmount === 4 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+      {playerAmount === 5 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+      {playerAmount === 6 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+      {playerAmount === 7 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+      {playerAmount === 8 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
 
 
 
