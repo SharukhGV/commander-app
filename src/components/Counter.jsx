@@ -38,7 +38,7 @@ function DecrementCommander(){
 
 
 return(
-<div style= {{border:"solid", borderColor:"black"}}>
+<div style= {{border:"solid", borderColor:"black", borderRadius:"10px"}}>
 
 <input placeholder="Your Name..." type="text"></input>
 
