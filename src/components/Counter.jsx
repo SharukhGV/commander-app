@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 
-function Counter(){
+function Counter({name, setName, command}){
 const [damageType, setDamageType]=useState(true)
 
 function DamageTYPE(){
@@ -35,19 +35,35 @@ function DecrementCommander(){
     setValueCommander(valueCommander++)
 }
 
+// const [inputValue, setInputValue] = useState('');
+
+// // Event handler for the onChange event
+// const handleInputChange = (event) => {
+//   // Update the state with the new value
+//   setInputValue(event.target.value);
+//   console.log(inputValue)
+// };
+
+// function SubmitInput(event){
+//     event.preventDefault()
+//     name.push(inputValue)
+// }
 
 return(
-<div style= {{border:"solid", borderColor:"black", borderRadius:"10px", flexFlow:"row"}}>
+<div style= {{border:"solid", backgroundColor:"black", borderColor:"white", borderRadius:"10px", flexFlow:"row"}}>
 
-<input placeholder="Your Name..." type="text"></input>
+{/* <form onSubmit={SubmitInput}>
+<input placeholder="Your Name..." type="text" onChange={handleInputChange} value={inputValue} ></input>
+</form> */}
+<input placeholder="Your Name..." type="text"  ></input>
 
-{damageType ? <button style={{color:"purple"}} onClick={DamageTYPE}>Commander Damage</button> : <button style={{color:"red"}}onClick={DamageTYPE}>Normal Damage</button>}
-
+{/* {damageType ? <button style={{color:"purple"}} onClick={DamageTYPE}>Commander Damage</button> : <button style={{color:"red"}}onClick={DamageTYPE}>Normal Damage</button>} */}
+<button style={{color:"red"}}onClick={DamageTYPE}>Normal Damage</button>
 
 {damageType ? 
 <div style={{backgroundColor:"rgba(128, 0, 128, 0.39)", padding:"10px"}}>
-{/* <div style={{color:"purple"}}>Commander Damage</div> */}
-<button style={{color:"purple"}} onClick={Increment}>+</button>
+{/* <div style={{color:"purple"}}>Commander Damage P1</div> */}
+<button style={{color:"purple"}} onClick={Increment}>+</button> 
 <button style={{color:"purple"}} onClick={DecrementCommander}>-</button>
 </div>
 :
@@ -58,15 +74,15 @@ return(
 </div>
 }
 
-<div style={{backgroundColor:"#00ff2a4d", padding:"10px"}}>
+{/* <div style={{backgroundColor:"#00ff2a4d", padding:"10px"}}>
 <div style={{color:"green"}}>Poison Counters</div>
 <button  style={{color:"green"}} onClick={IncrementPoison}>+</button>
 <button  style={{color:"green"}} onClick={DecremenPoison}>-</button>
-</div>
+</div> */}
 
-<div style={{color:"red"}}><strong>LIFE TOTAL: {value}</strong></div>
-<div style={{color:"purple"}}>Commander Damage {valueCommander}/21</div>
-<div style={{color:"green"}}>Poison Counters {poisonCounter}/30</div>
+<h1 style={{color:"red"}}><strong>LIFE TOTAL: {value}</strong></h1>
+{/* {command ===1 ?<div style={{color:"purple"}}>Commander Damage P1 {valueCommander}/21</div> : null}
+<div style={{color:"green"}}>Poison Counters {poisonCounter}/30</div> */}
 </div>
 
 )
