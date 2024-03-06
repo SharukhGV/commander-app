@@ -36,24 +36,23 @@ function DecrementCommander(){
 }
 
 
-
 return(
-<div style= {{border:"solid", borderColor:"black", borderRadius:"10px"}}>
+<div style= {{border:"solid", borderColor:"black", borderRadius:"10px", flexFlow:"row"}}>
 
 <input placeholder="Your Name..." type="text"></input>
 
-{damageType ? <button style={{color:"purple"}} onClick={DamageTYPE}>Commander Damage</button> : <button onClick={DamageTYPE}>Normal Damage</button>}
+{damageType ? <button style={{color:"purple"}} onClick={DamageTYPE}>Commander Damage</button> : <button style={{color:"red"}}onClick={DamageTYPE}>Normal Damage</button>}
 
 
 {damageType ? 
 <div style={{backgroundColor:"rgba(128, 0, 128, 0.39)", padding:"10px"}}>
-<div style={{color:"purple"}}>Commander Damage</div>
+{/* <div style={{color:"purple"}}>Commander Damage</div> */}
 <button style={{color:"purple"}} onClick={Increment}>+</button>
 <button style={{color:"purple"}} onClick={DecrementCommander}>-</button>
 </div>
 :
-<div>
-<div>Normal Damage</div>
+<div style={{color:"red"}}>
+{/* <div>Normal Damage</div> */}
 <button onClick={Increment}>+</button>
 <button onClick={Decrement}>-</button>
 </div>
@@ -65,7 +64,7 @@ return(
 <button  style={{color:"green"}} onClick={DecremenPoison}>-</button>
 </div>
 
-<div><strong>LIFE TOTAL: {value}</strong></div>
+<div style={{color:"red"}}><strong>LIFE TOTAL: {value}</strong></div>
 <div style={{color:"purple"}}>Commander Damage {valueCommander}/21</div>
 <div style={{color:"green"}}>Poison Counters {poisonCounter}/30</div>
 </div>

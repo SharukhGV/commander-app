@@ -5,7 +5,7 @@ import './App.css'
 import Counter from './components/Counter'
 function App() {
   const [count, setCount] = useState(0)
-  let [playerAmount, setPlayerAmount] = useState(2)
+  let [playerAmount, setPlayerAmount] = useState(1)
 
 
   function PlayerIncrease() {
@@ -17,8 +17,8 @@ function App() {
     }
   }
   function PlayerDecrease() {
-    if (playerAmount < 2) {
-      setPlayerAmount(2)
+    if (playerAmount < 1) {
+      setPlayerAmount(1)
     }
     else {
       setPlayerAmount(playerAmount--)
@@ -26,24 +26,27 @@ function App() {
   }
 
   return (
-    <>
-      <button onClick={PlayerIncrease}>Add A Player</button>
+<div>
+    <button onClick={PlayerIncrease}>Add A Player</button>
       <button onClick={PlayerDecrease}>Remove A Player</button>
 
 
+      <div style={{display: "flex",flexWrap: "wrap"}} className='flex-container'>
 
-      {playerAmount === 2 ? <div>  <Counter /><br></br><Counter /></div> : null}
-      {playerAmount === 3 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+      {playerAmount === 1 ? <div>  <Counter /></div> : null}
+
+     {playerAmount === 2 ? <div>  <Counter /><br></br><Counter /></div> : null}
+ {playerAmount === 3 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /></div> : null}
       {playerAmount === 4 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
       {playerAmount === 5 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
       {playerAmount === 6 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
-      {playerAmount === 7 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
-      {playerAmount === 8 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+       {playerAmount === 7 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+       {playerAmount === 8 ? <div>  <Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /><br></br><Counter /></div> : null}
+</div>
 
 
 
-
-    </>
+    </div>
   )
 }
 
