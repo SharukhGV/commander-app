@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-
+import heart from "./heart.gif"
 function Counter({name, setName, command}){
 const [damageType, setDamageType]=useState(true)
 
@@ -56,30 +56,21 @@ return(
 </form> */}
 <input placeholder="Your Name..." type="text"  ></input>
 
-{/* {damageType ? <button style={{color:"purple"}} onClick={DamageTYPE}>Commander Damage</button> : <button style={{color:"red"}}onClick={DamageTYPE}>Normal Damage</button>} */}
-<button style={{color:"red"}}onClick={DamageTYPE}>Normal Damage</button>
 
-{damageType ? 
-<div style={{backgroundColor:"rgba(128, 0, 128, 0.39)", padding:"10px"}}>
-{/* <div style={{color:"purple"}}>Commander Damage P1</div> */}
-<button style={{color:"purple"}} onClick={Increment}>+</button> 
-<button style={{color:"purple"}} onClick={DecrementCommander}>-</button>
-</div>
-:
 <div style={{color:"red"}}>
 {/* <div>Normal Damage</div> */}
 <button onClick={Increment}>+</button>
 <button onClick={Decrement}>-</button>
 </div>
-}
+
 
 {/* <div style={{backgroundColor:"#00ff2a4d", padding:"10px"}}>
 <div style={{color:"green"}}>Poison Counters</div>
 <button  style={{color:"green"}} onClick={IncrementPoison}>+</button>
 <button  style={{color:"green"}} onClick={DecremenPoison}>-</button>
 </div> */}
-
-<h1 style={{color:"red"}}><strong>LIFE TOTAL: {value}</strong></h1>
+<img style={{width:"70px", height:"70px"}} src={heart}></img>
+<div style={{color:"red", fontSize:"30px"}}><strong>{value}</strong></div>
 {/* {command ===1 ?<div style={{color:"purple"}}>Commander Damage P1 {valueCommander}/21</div> : null}
 <div style={{color:"green"}}>Poison Counters {poisonCounter}/30</div> */}
 </div>
