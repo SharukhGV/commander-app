@@ -51,7 +51,7 @@ function BioHazardSetting0(){
 
 <>
 
-{biohazard0 ?  <img onClick={BioHazardSetting0} style={{width:"40px",height:"40px"}} src={comDamageDone}></img> :<img onClick={BioHazardSetting0} style={{width:"40px",height:"40px"}} src={comDamage}></img>}
+{biohazard0 ?  <img onClick={BioHazardSetting0} style={{width:"35px",height:"35px"}} src={comDamageDone}></img> :<img onClick={BioHazardSetting0} style={{width:"35px",height:"35px"}} src={comDamage}></img>}
 
 </>
 
