@@ -48,7 +48,6 @@ function DecrementCommander(){
 //     event.preventDefault()
 //     name.push(inputValue)
 // }
-
 return(
 <div style= {{border:"solid", backgroundColor:"black", borderColor:"white", borderRadius:"10px", flexFlow:"row"}}>
 
