@@ -7,15 +7,15 @@ function ButtonPegs(){
 
 
 
-        const [currentColor, setCurrentColor] = useState("purple");
+        const [currentColor, setCurrentColor] = useState("white");
       
         const colors = {
-          red: { backgroundColor: "red",border:"solid", borderRadius:"10px", borderColor:"black" },
-          purple: { backgroundColor: "purple",border:"solid", borderRadius:"10px", borderColor:"black" },
-          green: { backgroundColor: "green",border:"solid", borderRadius:"10px", borderColor:"black" },
-          orange: { backgroundColor: "orange",border:"solid", borderRadius:"10px", borderColor:"black" },
-          blue: { backgroundColor: "blue",border:"solid", borderRadius:"10px", borderColor:"black" },
-          gray: { backgroundColor: "grey",border:"solid", borderRadius:"10px", borderColor:"black" },
+          red: { backgroundColor: "rgba(255, 0, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
+          purple: { backgroundColor: "rgba(162, 0, 255, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
+          green: { backgroundColor: "rgba(0, 255, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
+          orange: { backgroundColor: "rgba(255, 187, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
+          blue: { backgroundColor: "rgba(0, 0, 255, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
+          gray: { backgroundColor: "rgba(161, 161, 161, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
         };
       function Red(){
         setCurrentColor("red")
