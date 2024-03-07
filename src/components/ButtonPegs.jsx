@@ -10,12 +10,12 @@ function ButtonPegs(){
         const [currentColor, setCurrentColor] = useState("white");
       
         const colors = {
-          red: { backgroundColor: "rgba(255, 0, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
-          purple: { backgroundColor: "rgba(162, 0, 255, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
-          green: { backgroundColor: "rgba(0, 255, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
-          orange: { backgroundColor: "rgba(255, 187, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
-          blue: { backgroundColor: "rgba(0, 0, 255, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
-          gray: { backgroundColor: "rgba(161, 161, 161, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", padding:"20px" },
+          red: { backgroundColor: "rgba(255, 0, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", paddingBottom:"20px" },
+          purple: { backgroundColor: "rgba(162, 0, 255, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", paddingBottom:"20px" },
+          green: { backgroundColor: "rgba(0, 255, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", paddingBottom:"20px" },
+          orange: { backgroundColor: "rgba(255, 187, 0, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", paddingBottom:"20px" },
+          blue: { backgroundColor: "rgba(0, 0, 255, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", paddingBottom:"20px" },
+          gray: { backgroundColor: "rgba(161, 161, 161, 0.50)",border:"solid", borderRadius:"10px", borderColor:"black", paddingBottom:"20px" },
         };
       function Red(){
         setCurrentColor("red")
@@ -51,9 +51,14 @@ return(
 </div>
 <div style={colors[`${currentColor}`]}>
     <h2 style={{color:"white"}}>Poison Counters</h2>
-<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /></div>
-<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /></div>
-<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /><BioHazard /></div>
+<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
+<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
+<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
+<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
+<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
+<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
+
+
 </div>
 
 
