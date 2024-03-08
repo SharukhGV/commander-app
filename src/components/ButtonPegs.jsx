@@ -1,11 +1,28 @@
 
 import CommanderDamage from "./CommanderDamage"
 import BioHazard from "./BioHazard"
+import biohazardYellow from "./biohazardYellow1.png"
+import comDamage from"./comDamage.png"
 import { useState } from "react";
 function ButtonPegs(){
+    let [commander,setCommander]=useState(0)
 
+    function IncreaseCommander(){
+        setCommander(commander++)
+    }
+    function DecreaseCommander(){
+        if(commander<=0){setCommander(0)}
+        else{setCommander(commander--)}
+    }
+let [poison,setPoison]=useState(0)
 
-
+function IncreasePoison(){
+    setPoison(poison++)
+}
+function DecreasePoison(){
+    if(poison<=0){setPoison(0)}
+    else{setPoison(poison--)}
+}
 
         const [currentColor, setCurrentColor] = useState("white");
       
@@ -44,21 +61,24 @@ return(
 
 <div style={colors[`${currentColor}`]}>
 <h2 style={{color:"white"}}>Commander Damage</h2>
+{/* <div><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/></div>
 <div><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/></div>
-<div><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/></div>
-<div><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/></div>
-
+<div><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/><CommanderDamage/></div> */}
+<div><img style={{width:"50px", height:"50px"}} src={comDamage}></img></div>
+<button onClick={IncreaseCommander}>+</button><span style={{fontSize:"30px"}}>  {commander}  </span>
+<button onClick={DecreaseCommander}>-</button>
 </div>
 <div style={colors[`${currentColor}`]}>
     <h2 style={{color:"white"}}>Poison Counters</h2>
+{/* <div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
 <div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
 <div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
 <div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
 <div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
-<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
-<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div>
-
-
+<div><BioHazard /> <BioHazard /> <BioHazard /><BioHazard /><BioHazard /></div> */}
+<div><img style={{width:"50px", height:"50px"}} src={biohazardYellow}></img></div>
+<button onClick={IncreasePoison}>+</button><span style={{fontSize:"30px"}}>  {poison}  </span>
+<button onClick={DecreasePoison}>-</button>
 </div>
 
 

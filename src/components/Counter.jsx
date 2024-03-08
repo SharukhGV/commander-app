@@ -59,8 +59,7 @@ return(
 
 <div style={{color:"red"}}>
 {/* <div>Normal Damage</div> */}
-<button onClick={Increment}>+</button>
-<button onClick={Decrement}>-</button>
+<button onClick={Increment}>+</button><span style={{color:"red", fontSize:"30px"}}><strong>  {value}  </strong></span><button onClick={Decrement}>-</button>
 </div>
 
 
@@ -70,7 +69,10 @@ return(
 <button  style={{color:"green"}} onClick={DecremenPoison}>-</button>
 </div> */}
 <img style={{width:"70px", height:"70px"}} src={heart}></img>
-<div style={{color:"red", fontSize:"30px"}}><strong>{value}</strong></div>
+<br></br>
+<br></br>
+
+{/* <span style={{color:"red", fontSize:"30px"}}><strong>{value}</strong></span> */}
 {/* {command ===1 ?<div style={{color:"purple"}}>Commander Damage P1 {valueCommander}/21</div> : null}
 <div style={{color:"green"}}>Poison Counters {poisonCounter}/30</div> */}
 </div>
