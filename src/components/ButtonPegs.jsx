@@ -9,19 +9,22 @@ function ButtonPegs(){
 
     function IncreaseCommander(){
         setCommander(commander++)
+        setCommander(commander++)
+
     }
     function DecreaseCommander(){
         if(commander<=0){setCommander(0)}
-        else{setCommander(commander--)}
+        else{setCommander(commander--);setCommander(commander--)}
     }
 let [poison,setPoison]=useState(0)
 
 function IncreasePoison(){
     setPoison(poison++)
+    setPoison(poison++)
 }
 function DecreasePoison(){
     if(poison<=0){setPoison(0)}
-    else{setPoison(poison--)}
+    else{setPoison(poison--);setPoison(poison--)}
 }
 
         const [currentColor, setCurrentColor] = useState("white");

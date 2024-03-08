@@ -16,10 +16,14 @@ let [poisonCounter,setPoisonCounter]=useState(0)
 // Normal
 function Increment(){
     setValue(value++)
+    setValue(value++)
+
 }
 
 function Decrement(){
     setValue(value--)
+    setValue(value--)
+
 }
 
 function IncrementPoison(){
